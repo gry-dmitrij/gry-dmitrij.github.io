@@ -3,7 +3,7 @@ const fs = require('fs');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+//const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const inputDir = 'src';      // входная директория
 const outputDir = 'dist';    // выходная директория
@@ -72,7 +72,7 @@ module.exports = (env, options) => {
 
             }),
             new CleanWebpackPlugin(),
-            new BundleAnalyzerPlugin()
+            //new BundleAnalyzerPlugin()
         ].concat(generateHTMLPlugins())
     }
 }
