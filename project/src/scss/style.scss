@@ -1,0 +1,18 @@
+@import "_variables.scss";
+@import "normalize.css";
+@import "fonts/_fonts.scss";
+@import "_general.scss";
+
+/*
+@import "directory!**!!(*__*|*--*).scss"; - шаблон для блоков
+@import "directory!**!*__!(*--*).scss";   - шаблон для элементов
+@import "directory!**!+(*--*).scss";      - шаблон для модификаторов
+*/
+
+@import "main-nav/**/!(*__*|*--*).scss";
+@import "main-nav/**/*__!(*--*).scss";
+@import "main-nav/**/+(*--*).scss";
+@import "page-header/**/!(*__*|*--*).scss";
+@import "page-header/**/*__!(*--*).scss";
+@import "page-header/**/+(*--*).scss";
+
