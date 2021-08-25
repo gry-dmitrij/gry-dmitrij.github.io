@@ -12,6 +12,8 @@ const outputDir = 'dist';    // выходная директория
 
 // генерирует конфигурации для html-webpack-pugin,
 // проходя по всем html файлам в директории
+// если inject = true, то автоматически вставляет
+// ссылку на js-код в html-документ
 function generateHTMLPlugins(inject = true) {
     let templateFiles = fs.readdirSync(path.resolve(__dirname, inputDir));
     return  templateFiles.filter(item => /\.(html)/i.test(path.extname(item)))
@@ -25,6 +27,7 @@ function generateHTMLPlugins(inject = true) {
 }
 
 module.exports = (env, options) => {
+	// определение режима сборки
     const devMode = options.mode === 'development';
     return {
         context: path.resolve(__dirname, inputDir),
@@ -48,6 +51,8 @@ module.exports = (env, options) => {
                 {
                     test: /\.(s[ac]|c)ss$/i,
                     use: [
+                    	// для production используем MiniCssExtractPlugin
+						// для development используем style-loader
                         devMode ? 'style-loader' :
                             {
                                 loader: MiniCssExtractPlugin.loader,
@@ -75,11 +80,19 @@ module.exports = (env, options) => {
 					}
 				},
 				{
-					test: /img\/*.(jpe?g|png|gif|svg)$/i,
-					type: 'asset',
+					test: /\.(jpe?g|png|gif|svg)$/i,
+					include: [
+						//берем файлы только в следующих папках
+						path.resolve(__dirname, inputDir, 'img/')
+					],
+					type: 'asset/resource',
 					generator: {
 						filename: 'img/[hash][ext]'
 					}
+				},
+				{
+					test: /\.(html)$/i,
+					use: ['html-loader']
 				}
             ]
         },
