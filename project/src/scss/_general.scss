@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: $general-font-family;
 }
 
 img {
@@ -18,8 +19,4 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-}
-
-* {
-  font-family: $general-font-family;
 }

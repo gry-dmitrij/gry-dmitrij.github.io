@@ -1,0 +1,22 @@
+.logo-box {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  color: #9e6548;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: calc(50% - 22px);
+    right: 0;
+
+    display: block;
+    width: 3px;
+    height: 45px;
+
+    background: url("../img/delimiter.png");
+  }
+}
