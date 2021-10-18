@@ -9,13 +9,44 @@
 @import "directory!**!+(*--*).scss";      - шаблон для модификаторов
 */
 
+@import "about/**/!(*__*|*--*).scss";
+@import "about/**/*__!(*--*).scss";
+@import "about/**/+(*--*).scss";
+@import "banner/**/!(*__*|*--*).scss";
+@import "banner/**/*__!(*--*).scss";
+@import "banner/**/+(*--*).scss";
+@import "cards/**/!(*__*|*--*).scss";
+@import "cards/**/*__!(*--*).scss";
+@import "cards/**/+(*--*).scss";
+@import "card/**/!(*__*|*--*).scss";
+@import "card/**/*__!(*--*).scss";
+@import "card/**/+(*--*).scss";
+@import "general-info/**/!(*__*|*--*).scss";
+@import "general-info/**/*__!(*--*).scss";
+@import "general-info/**/+(*--*).scss";
 @import "main-nav/**/!(*__*|*--*).scss";
 @import "main-nav/**/*__!(*--*).scss";
 @import "main-nav/**/+(*--*).scss";
-@import "page-header/**/!(*__*|*--*).scss";
-@import "page-header/**/*__!(*--*).scss";
-@import "page-header/**/+(*--*).scss";
-
 @import "logo/**/!(*__*|*--*).scss";
 @import "logo/**/*__!(*--*).scss";
 @import "logo/**/+(*--*).scss";
+@import "page-header/**/!(*__*|*--*).scss";
+@import "page-header/**/*__!(*--*).scss";
+@import "page-header/**/+(*--*).scss";
+@import "page/**/!(*__*|*--*).scss";
+@import "page/**/*__!(*--*).scss";
+@import "page/**/+(*--*).scss";
+@import "skills/**/!(*__*|*--*).scss";
+@import "skills/**/*__!(*--*).scss";
+@import "skills/**/+(*--*).scss";
+@import "tag/**/!(*__*|*--*).scss";
+@import "tag/**/*__!(*--*).scss";
+@import "tag/**/+(*--*).scss";
+@import "tags/**/!(*__*|*--*).scss";
+@import "tags/**/*__!(*--*).scss";
+@import "tags/**/+(*--*).scss";
+@import "works/**/!(*__*|*--*).scss";
+@import "works/**/*__!(*--*).scss";
+@import "works/**/+(*--*).scss";
+
+

@@ -1,0 +1,7 @@
+.card__img {
+  transition: all 3s;
+
+  &:hover{
+    transform: translateY(calc(-100% + 400px));
+  }
+}

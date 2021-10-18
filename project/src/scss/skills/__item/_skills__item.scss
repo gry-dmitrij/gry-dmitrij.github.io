@@ -1,0 +1,22 @@
+.skills__item {
+  margin: 0 0 10px 0;
+  &:after{
+    content: "";
+    display: block;
+    margin: 5px 0 5px;
+    height: 20px;
+    //background-color: #40b1eb;
+    background-color: #eaebeb;
+    border-radius: 5px;
+  }
+
+  $i: 10;
+  @while $i <= 100 {
+    &-#{$i}:after {
+      background: linear-gradient(to right, #40b1eb, #40b1eb #{1% * $i}, #eaebeb #{1% * $i}, #eaebeb);
+    }
+    $i: $i + 10;
+  }
+
+
+}

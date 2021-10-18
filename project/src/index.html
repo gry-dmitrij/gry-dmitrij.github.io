@@ -25,7 +25,7 @@
         <a class="main-nav__link main-nav__link--active">Обо мне</a>
       </li>
       <li class="main-nav__item">
-        <a href="" class="main-nav__link">Портфолио</a>
+        <a href="/portfolio.html" class="main-nav__link">Портфолио</a>
       </li>
       <li class="main-nav__item">
         <a href="" class="main-nav__link">Контакты</a>
@@ -33,12 +33,71 @@
     </ul>
   </nav>
 </header>
-<main class="page-main">
+<main class="page">
   <section class="banner">
     <img src="img/no-photo-m.png" alt="Дмитрий Грязных" class="banner__img">
-    <span class="banner__name">Дмитрий Грязных</span>
-    <p class="banner-tagline">Не беда, если хорошо не получилось с первого раза.
-    Главное, чтобы получилось с последнего!</p>
+    <div class="banner__wrapper-text">
+      <span class="banner__name">Дмитрий Грязных</span>
+      <p class="banner__tagline">Не беда, если хорошо не получилось с первого раза.
+        Главное, чтобы получилось с последнего!</p>
+    </div>
+  </section>
+  <section class="about">
+    <section class="general-info">
+      <h2 class="about__title">Основная информация</h2>
+      <ul class="general-info__list">
+        <li class="general-info__item">
+          <span class="general-info__category">Имя: </span>
+          <span
+          class="general-inf__value">Дмитрий</span>
+        </li>
+        <li class="general-info__item">
+          <span class="general-info__category">Фамилия: </span>
+          <span class="general-inf__value">Грязных</span>
+        </li>
+        <li class="general-info__item">
+          <span class="general-info__category">Возраст: </span>
+          <span class="general-inf__value">35</span>
+        </li>
+        <li class="general-info__item">
+          <span class="general-info__category">Страна: </span>
+          <span class="general-inf__value">Россия</span>
+        </li>
+      </ul>
+    </section>
+    <section class="about-info">
+      <section class="about-info__section">
+        <h2 class="about__title">Обо мне</h2>
+        <p class="about-info__desc">
+          Я&nbsp;Junior Frontend-разработчик.<br>
+          Коммерческого опыта в&nbsp;frontend-разработке на&nbsp;сегодняшний
+          день у&nbsp;меня нет. Но&nbsp;опыт в&nbsp;программировании у&nbsp;меня довольно обширный. Писать программы мне нравилось
+          со&nbsp;школы.
+          Мне приходилось программировать промышленные контроллеры, писать программы для различных SCADA-систем,
+          для себя писал программы на&nbsp;языках Delphi, C#. В&nbsp;2014&nbsp;г. написал приложение
+          для Android, которое несколько лет занимало TOP 1&nbsp;в Play Market среди конкурентов. <br>
+          По&nbsp;основной специальности я&nbsp;инженер АСУТП. К&nbsp;сожалению, в&nbsp;моем родном городе практически нет
+          возможности расти и&nbsp;развиваться в&nbsp;данной отрасли, а&nbsp;переезд в&nbsp;другой город для меня очень
+          обременителен. <br>
+          Я&nbsp;решил сменить область деятельности и&nbsp;выбрал frontend-разработку. <br>
+        </p>
+      </section>
+      <section class="about-info__section">
+        <h2 class="about__title">Мои навыки</h2>
+        <ul class="skills">
+          <li class="skills__item skills__item-80">HTML5</li>
+          <li class="skills__item skills__item-80">CSS3</li>
+          <li class="skills__item skills__item-80">SCSS</li>
+          <li class="skills__item skills__item-70">JavaScript</li>
+          <li class="skills__item skills__item-60">Vue.js/Vuex/Vue-router/Nuxt</li>
+          <li class="skills__item skills__item-30">React</li>
+          <li class="skills__item skills__item-30">Webpack</li>
+          <li class="skills__item skills__item-70">Git</li>
+          <li class="skills__item skills__item-60">MySQL</li>
+          <li class="skills__item skills__item-20">Node.js</li>
+        </ul>
+      </section>
+    </section>
   </section>
 </main>
 </body>
