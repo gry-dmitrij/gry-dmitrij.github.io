@@ -1,4 +1,9 @@
 .banner__img {
   display: block;
   width: 330px;
+  grid-row: 1/3;
+
+  @media (max-width: $tablet-width) {
+    justify-self: center;
+  }
 }
