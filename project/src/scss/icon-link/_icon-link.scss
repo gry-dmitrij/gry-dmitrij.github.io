@@ -1,0 +1,26 @@
+.icon-link {
+  padding-left: 18px;
+  display: inline-block;
+  position: relative;
+  color: #0093cc;
+
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: center / contain no-repeat;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &[href^="https://t.me/"]:after {
+    background-image: url("../img/icons/telegram_icon.svg");
+  }
+}

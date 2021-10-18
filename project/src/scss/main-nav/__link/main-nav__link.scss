@@ -1,0 +1,9 @@
+.main-nav__link {
+  display: inline-block;
+  padding: 20px 20px 15px;
+  color: #ffffff;
+
+  .main-nav__item--active &{
+    color: #000000;
+  }
+}

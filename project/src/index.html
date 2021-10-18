@@ -10,32 +10,32 @@
 <header class="page-header">
   <div class="page-header__top">
     <div class="logo-box">
-      <img src="img/no-photo-m.png" alt="Фото Грязных Дмитрий" class="logo-img"
+      <img src="img/photo-sqare.jpg" alt="Фото Грязных Дмитрий" class="logo-img"
            width="50" height="50">
       <span class="logo-name logo-box__name">Дмитрий Грязных</span>
     </div>
     <p class="header-position">Junior Frontend Developer</p>
     <div class="header-contacts page-header__contacts">
-      Контакты
+      <a class="icon-link" href="https://t.me/grydmitrij">@grydmitrij</a><br>
     </div>
   </div>
   <nav class="main-nav">
     <ul class="main-nav__list">
-      <li class="main-nav__item">
-        <a class="main-nav__link main-nav__link--active">Обо мне</a>
+      <li class="main-nav__item  main-nav__item--active">
+        <a class="main-nav__link main-nav__link">Обо мне</a>
       </li>
       <li class="main-nav__item">
-        <a href="/portfolio.html" class="main-nav__link">Портфолио</a>
+        <a href="portfolio.html" class="main-nav__link">Портфолио</a>
       </li>
       <li class="main-nav__item">
-        <a href="" class="main-nav__link">Контакты</a>
+        <a href="contacts.html" class="main-nav__link">Контакты</a>
       </li>
     </ul>
   </nav>
 </header>
-<main class="page">
+<main class="page page--main">
   <section class="banner">
-    <img src="img/no-photo-m.png" alt="Дмитрий Грязных" class="banner__img">
+    <img src="img/photo.jpg" alt="Дмитрий Грязных" class="banner__img">
     <div class="banner__wrapper-text">
       <span class="banner__name">Дмитрий Грязных</span>
       <p class="banner__tagline">Не беда, если хорошо не получилось с первого раза.
@@ -56,8 +56,8 @@
           <span class="general-inf__value">Грязных</span>
         </li>
         <li class="general-info__item">
-          <span class="general-info__category">Возраст: </span>
-          <span class="general-inf__value">35</span>
+          <span id="years-category" class="general-info__category">Год рождения: </span>
+          <span id="years-value" class="general-inf__value">1986</span>
         </li>
         <li class="general-info__item">
           <span class="general-info__category">Страна: </span>
@@ -100,5 +100,6 @@
     </section>
   </section>
 </main>
+<script src="js/years-old.js"></script>
 </body>
 </html>
