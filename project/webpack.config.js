@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+// const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
@@ -34,7 +34,9 @@ module.exports = (env, options) => {
         entry: './index.js',
         output: {
             path: path.join(__dirname, outputDir),
-            filename: 'js/[name].js'
+            filename: 'js/[name].js',
+			assetModuleFilename: "[name]_[hash][ext]",
+			clean: true,
         },
         module: {
             rules: [
@@ -96,10 +98,12 @@ module.exports = (env, options) => {
 				}
             ]
         },
+		optimization: {
+			realContentHash: options.mode === 'development',
+		},
         plugins: [
             new MiniCssExtractPlugin({
                 filename: 'css/style.[hash].css',
-
             }),
 			new ImageMinimizerPlugin({
 				minimizerOptions: {
@@ -127,8 +131,8 @@ module.exports = (env, options) => {
 					]
 				}
 			}),
-            new CleanWebpackPlugin(),
+            // new CleanWebpackPlugin(),
             //new BundleAnalyzerPlugin()
-        ].concat(generateHTMLPlugins())
+        ].concat(generateHTMLPlugins(true))
     }
 }
