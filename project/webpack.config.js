@@ -99,7 +99,7 @@ module.exports = (env, options) => {
             ]
         },
 		optimization: {
-			realContentHash: options.mode === 'development',
+			realContentHash: false,
 		},
         plugins: [
             new MiniCssExtractPlugin({

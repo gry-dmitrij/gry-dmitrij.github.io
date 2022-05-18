@@ -2,7 +2,7 @@ const yearsCategory = document.getElementById('years-category');
 const yearsValue = document.getElementById('years-value');
 
 if (yearsCategory && yearsValue) {
-	yearsCategory.textContent = 'Возраст:';
+	yearsCategory.textContent = 'Возраст: ';
 	yearsValue.textContent = `${getAge('06.02.1986')}`;
 }
 
