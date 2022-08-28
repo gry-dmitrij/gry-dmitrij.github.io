@@ -1,6 +1,10 @@
 .page-header__top {
   display: flex;
   align-items: center;
-
   padding: 5px 10px;
+
+  @media (max-width: $phone-width) {
+    flex-flow: column;
+    align-items: flex-start;
+  }
 }

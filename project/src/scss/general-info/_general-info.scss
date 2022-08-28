@@ -1,6 +1,9 @@
 .general-info {
   padding: 30px 0 0;
   width: 330px;
-
   background: linear-gradient(to left, #ECEDF0, #ffffff 10%);
+
+  @media (max-width: $phone-width) {
+    width: 100%;
+  }
 }

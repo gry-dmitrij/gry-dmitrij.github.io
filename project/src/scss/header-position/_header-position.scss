@@ -1,0 +1,6 @@
+.header-position {
+  @media (max-width: $phone-width) {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,3 +1,7 @@
 .about {
   display: flex;
+
+  @media (max-width: $phone-width) {
+    flex-flow: column;
+  }
 }
